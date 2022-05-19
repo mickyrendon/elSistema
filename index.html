@@ -10,35 +10,36 @@
 </head>
 <body>
     <main>
-        <form action="">
+        <form action="#">
            <div class="date-ammount-container">
                 <label for="date">
-                    <input type="text" id="date" class="date" placeholder="Día / mes">
+                    <input type="date" id="date" class="date" placeholder="Día / mes" name="date">
                 </label>
                 <label for="ammount">
-                    <input type="text" id="ammount" class="ammount" placeholder="Monto">
+                    <input type="number" id="ammount" class="ammount" placeholder="Monto" name="ammount">
                 </label>
            </div>
             <label for="name">
-                <input type="text" id="name" class="name" placeholder="Nombre">
+                <input type="text" id="name" class="name" placeholder="Nombre" name="name">
             </label>
             <label for="indicator">
-                <input type="text" id="indicator" class="indicator" placeholder="Apellido, indicación o referencia">
+                <input type="text" id="indicator" class="indicator" placeholder="Apellido, indicación o referencia" name="indicator">
             </label>
             <div class="plan-container">
                 <label for="fee">
-                    <input type="text" id="fee" class="fee" placeholder="Cuota">
+                    <input type="number" id="fee" class="fee" placeholder="Cuota" name="fee">
                 </label>
                 <label for="">
-                    <input type="text" class="days" placeholder="Días">
+                    <input type="number" class="days" placeholder="Días" name="days">
                 </label>
             </div>
             <div class="submit-container">
                 <label for="submit">
-                    <input type="button" id="submit" class="submit" value="Ok">
+                    <input type="submit" id="submit" class="submit" value="Ok">
                 </label>
             </div>
         </form>
     </main>
+    <script src="/index.js"></script>
 </body>
 </html>
