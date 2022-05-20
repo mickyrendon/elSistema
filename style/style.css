@@ -12,12 +12,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] { -moz-appearance:textfield; }
 main{
-    margin-top: 4rem;
+    margin: 4rem 0;
     display: flex;
     justify-content: center;
 }
 form{
-    padding: 0.5rem;
+    padding: 0.8rem;
     width: 20rem;
     height: auto;
     display: flex;
@@ -34,7 +34,7 @@ form{
 .name, .indicator,.submit-container{
     width: 100%;
 }
-.date, .ammount, .name, .indicator, .fee, .days, .submit{
+.date, .ammount, .name, .indicator, .fee, .days, .submit, li{
     margin-top: 1rem;
     height: 1.5rem;
     text-align: center;
@@ -42,9 +42,50 @@ form{
     /* box-shadow: var(--box-shadow); */
     /* border-radius: var(--border-radius); */
 }
+.date{
+    color: var(--color);
+    font-weight: lighter;
+    display: inline-flex;
+    justify-content: center;
+}
 .submit-container{
     justify-content: flex-end;
 }
 .submit{
     width: 4rem;
+}
+/* cuotes container */
+.cuotes-container{
+    margin: 1rem 0;
+    height:auto;
+    border: var(--border);
+}
+.list-container{
+    display: block;
+    columns: 2;
+    /* list-style-position:inside; */
+    /* list-style-type:decimal; */
+    counter-reset: number;
+    list-style: none;
+}
+li{
+    margin:0;
+    /* padding: 0.2rem; */
+    width: 100%;
+    align-content: center;
+    text-align: start;
+    
+}
+.list-container li span::before {
+    counter-increment: number;
+    content: counter(number)"\a0";
+}
+span{
+    width: 1.5rem;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-right: var(--border);
+    color: var(--color);
 }

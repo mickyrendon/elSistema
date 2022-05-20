@@ -10,36 +10,73 @@
 </head>
 <body>
     <main>
-        <form action="#">
+        <form action="#" id="form" class="form">
            <div class="date-ammount-container">
                 <label for="date">
-                    <input type="date" id="date" class="date" placeholder="Día / mes" name="date">
+                    <input type="date" id="date" class="date" placeholder="Día / mes" name="date" required>
                 </label>
                 <label for="ammount">
-                    <input type="number" id="ammount" class="ammount" placeholder="Monto" name="ammount">
+                    <input type="number" id="ammount" class="ammount" placeholder="Monto" name="ammount" required>
                 </label>
            </div>
             <label for="name">
-                <input type="text" id="name" class="name" placeholder="Nombre" name="name">
+                <input type="text" id="name" class="name" placeholder="Nombre" name="name" required>
             </label>
             <label for="indicator">
-                <input type="text" id="indicator" class="indicator" placeholder="Apellido, indicación o referencia" name="indicator">
+                <input type="text" id="indicator" class="indicator" placeholder="Apellido, indicación o referencia" name="indicator" required>
             </label>
             <div class="plan-container">
                 <label for="fee">
-                    <input type="number" id="fee" class="fee" placeholder="Cuota" name="fee">
+                    <input type="number" id="fee" class="fee" placeholder="Cuota" name="fee" required>
                 </label>
                 <label for="">
-                    <input type="number" class="days" placeholder="Días" name="days">
+                    <input type="number" class="days" placeholder="Días" name="days" required>
                 </label>
             </div>
             <div class="submit-container">
                 <label for="submit">
                     <input type="submit" id="submit" class="submit" value="Ok">
+                    <!-- <input type="submit" id="submit" class="submit" value="Ok"> -->
                 </label>
+            </div>
+            <div class="cuotes-container">
+                <ul class="list-container">
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                </ul>
             </div>
         </form>
     </main>
-    <script src="/index.js"></script>
+    <script src="/modules/btnEvent.js"></script>
+    <script type="module" src="/modules/newCard.js"></script>
+    <script type="module" src="/index.js"></script>
 </body>
 </html>
